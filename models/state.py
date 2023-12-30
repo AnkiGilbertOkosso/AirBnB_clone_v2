@@ -19,7 +19,7 @@ class State(BaseModel, Base):
                                        backref="state")
 
     @property
-    def get_cities(self):
+    def cities(self):
         diction = models.storage.all()
         lists = []
         result = []
