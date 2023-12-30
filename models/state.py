@@ -20,7 +20,6 @@ class State(BaseModel, Base):
 
     @property
     def cities(self):
-	"""Getting all cities from states"""
         diction = models.storage.all()
         lists = []
         result = []
